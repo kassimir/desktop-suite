@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/0a3219af00.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/drawer.css">
+  <title>drawermodule</title>
+</head>
+<body>
+<div id="tabs"></div>
+<div id="container">
+  <div id="sys-tab">
+    <table>
+      <tbody>
+      <!-- -------------- CPU / GRAPHICS ------------ -->
+      <tr>
+        <th colspan="2">SYSTEM DATA</th>
+      </tr>
+      <tr>
+        <td id="cpuname" colspan="2"></td>
+      </tr>
+      <tr>
+        <td id="cpuinfo" colspan="2"></td>
+      </tr>
+      <tr>
+        <td id="graphics" colspan="2"></td>
+      </tr>
+      <tr>
+        <td id="distro" colspan="2"></td>
+      </tr>
+      <tr>
+        <td id="wifispeed"></td>
+      </tr>
+      <!-- ------------------------------------------ -->
+
+
+      <!-- ----------------- DRIVES ----------------- -->
+      <tr class="spacer"></tr>
+      <tr id="drives">
+        <th colspan="2">DRIVES</th>
+      </tr>
+      <!-- ------------------------------------------ -->
+
+
+      <!-- ------------ PROCESSOR SPEEDS ------------ -->
+      <tr class="spacer"></tr>
+      <tr>
+        <th colspan="2">CPU SPEEDS</th>
+      </tr>
+
+      <tr>
+        <td>Avg:</td>
+        <td id="cpuavg"></td>
+      </tr>
+
+      <tr>
+        <td>Min:</td>
+        <td id="cpumin"></td>
+      </tr>
+
+      <tr>
+        <td>Max:</td>
+        <td id="cpumax"></td>
+      </tr>
+      <!-- ------------------------------------------ -->
+
+      <!-- ----------------- MEMORY ----------------- -->
+      <tr class="spacer"></tr>
+      <tr>
+        <th colspan="2">MEMORY</th>
+      </tr>
+
+      <tr>
+        <td>Total:</td>
+        <td id="totalmem"></td>
+      </tr>
+      <tr>
+        <td>Free:</td>
+        <td id="freemem"></td>
+      </tr>
+      <tr>
+        <td>Used:</td>
+        <td id="usedmem"></td>
+      </tr>
+      <tr>
+        <td>Active:</td>
+        <td id="activemem"></td>
+      </tr>
+      <tr>
+        <td>Swap Total:</td>
+        <td id="swaptotal"></td>
+      </tr>
+      <tr>
+        <td>Swap Used:</td>
+        <td id="swapused"></td>
+      </tr>
+      <tr>
+        <td>Swap Free:</td>
+        <td id="swapfree"></td>
+      </tr>
+      <tr>
+        <td>Avg Load:</td>
+        <td id="avgload"></td>
+      </tr>
+      <tr>
+        <td>Curr Load (Total):</td>
+        <td id="currload"></td>
+      </tr>
+      <tr>
+        <td>Curr Load (User):</td>
+        <td id="currloaduser"></td>
+      </tr>
+      <tr id="currloadsystr">
+        <td>Curr Load (System):</td>
+        <td id="currloadsys"></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="faves-tab"></div>
+  <div id="games-tab"></div>
+</div>
+
+<script src="../js/drawer.js"></script>
+</body>
+</html>

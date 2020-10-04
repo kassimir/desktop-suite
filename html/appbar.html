@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>appbarmodule</title>
+  <script src="https://kit.fontawesome.com/0a3219af00.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/appbar.css">
+  <svg>
+
+<!--    &lt;!&ndash;    rgb(30,230,249)&ndash;&gt;-->
+<!--    <filter id="maincolor"-->
+<!--            color-interpolation-filters="sRGB"-->
+<!--            x="0" y="0" height="100%" width="100%">-->
+<!--      <feColorMatrix type="matrix"-->
+<!--                     values="0.12 0    0    0   0-->
+<!--                             0    0.90 0    0   0-->
+<!--                             0    0    0.98 0   0-->
+<!--                             0    0    0    1   0 "/>-->
+<!--    </filter>-->
+
+<!--    &lt;!&ndash;    rgb(228,85,91)&ndash;&gt;-->
+<!--    <filter id="firstaccent"-->
+<!--            color-interpolation-filters="sRGB"-->
+<!--            x="0" y="0" height="100%" width="100%">-->
+<!--      <feColorMatrix type="matrix"-->
+<!--                     values="0.89 0    0    0   0-->
+<!--                             0    0.33 0    0   0-->
+<!--                             0    0    0.36 0   0-->
+<!--                             0    0    0    1   0 "/>-->
+<!--    </filter>-->
+
+<!--    &lt;!&ndash;     rgb(20, 52, 73)&ndash;&gt;-->
+<!--    <filter id="secondaccent"-->
+<!--            color-interpolation-filters="sRGB"-->
+<!--            x="0" y="0" height="100%" width="100%">-->
+<!--      <feColorMatrix type="matrix"-->
+<!--                     values="0.12 0    0    0   0-->
+<!--                             0    0.90 0    0   0-->
+<!--                             0    0    0.98 0   0-->
+<!--                             0    0    0    1   0 "/>-->
+<!--    </filter>-->
+
+<!--    &lt;!&ndash;     rgb(255, 255, 255)&ndash;&gt;-->
+<!--    <filter id="white"-->
+<!--            color-interpolation-filters="sRGB"-->
+<!--            x="0" y="0" height="100%" width="100%">-->
+<!--      <feColorMatrix type="matrix"-->
+<!--                     values="1    0    0    0   0-->
+<!--                             0    1    0    0   0-->
+<!--                             0    0    1    0   0-->
+<!--                             0    0    0    1   0 "/>-->
+<!--    </filter>-->
+    <!--    rgb(115, 166, 118)-->
+    <filter id="maincolor"
+            color-interpolation-filters="sRGB"
+            x="0" y="0" height="100%" width="100%">
+      <feColorMatrix type="matrix"
+                     values="0.45 0    0    0   0
+                             0    0.45 0    0   0
+                             0    0    0.46 0   0
+                             0    0    0    1   0 "/>
+    </filter>
+
+    <!--     rgb(218,165,32)-->
+    <filter id="firstaccent"
+            color-interpolation-filters="sRGB"
+            x="0" y="0" height="100%" width="100%">
+      <feColorMatrix type="matrix"
+                     values="0.85 0    0    0   0
+                             0    0.65 0    0   0
+                             0    0    0.32 0   0
+                             0    0    0    1   0 "/>
+    </filter>
+
+    <!--     rgb(69, 76, 84)-->
+    <filter id="secondaccent"
+            color-interpolation-filters="sRGB"
+            x="0" y="0" height="100%" width="100%">
+      <feColorMatrix type="matrix"
+                     values="0.69 0    0    0   0
+                             0    0.76 0    0   0
+                             0    0    0.84 0   0
+                             0    0    0    1   0 "/>
+    </filter>
+
+    <!--     rgb(69, 76, 84)-->
+    <filter id="white"
+            color-interpolation-filters="sRGB"
+            x="0" y="0" height="100%" width="100%">
+      <feColorMatrix type="matrix"
+                     values="0.69 0    0    0   0
+                             0    0.76 0    0   0
+                             0    0    0.84 0   0
+                             0    0    0    1   0 "/>
+    </filter>
+  </svg>
+</head>
+<body>
+<!--  <div id="container">-->
+<!--    <div id="left">-->
+<!--      <button id="menubutton" onclick="toggleShortcuts()">-->
+<!--        <img src="../images/chief.png">-->
+<!--      </button>-->
+<!--      <div id="shortcuts"></div>-->
+<!--    </div>-->
+<!--    <div id="right">-->
+<!--      <div id="mediacontainer_outer">-->
+<!--        <div id="stream-data" class="second-accent">-->
+<!--          <span id="stream-title" class="first-accent"></span>-->
+<!--          <span id="stream-episode" class="first-accent"></span>-->
+<!--          <div id="stream-controls" class="first-accent">-->
+<!--            <i class="fas fa-backward" onclick="action('rewind')"></i>-->
+<!--            <i class="fas fa-play" id="control-play" onclick="action('playPause')"></i>-->
+<!--            <i class="fas fa-pause" id="control-pause" onclick="action('playPause')"></i>-->
+<!--            <i class="fas fa-forward" onclick="action('ff')"></i>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="image-container" id="close-streaming">-->
+<!--          <i class="fas fa-times fa-2x first-accent" id="close-video" onclick="setStreamData({togglePlayer: 'close'})"></i>-->
+<!--          <i class="fas fa-file-video fa-2x second-accent" id="open-video" onclick="setStreamData({togglePlayer: 'open'})"></i>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <button id="mediabutton" onclick="toggleMediaContainer()">-->
+<!--        <i class="fas fa-video second-accent"></i>-->
+<!--      </button>-->
+<!--    </div>-->
+<!--  </div>-->
+  <div id="clock-container">
+    <div id="clock">
+      <div id="time"></div>
+      <div id="date"></div>
+    </div>
+  </div>
+
+  <script src="../js/appbar.js"></script>
+</body>
+</html>

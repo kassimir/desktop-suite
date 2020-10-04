@@ -1,10 +1,11 @@
 {
-  "name": "electron-quick-start",
+  "name": "desktop-suite",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "main.js",
+  "main": "js/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,6 +18,13 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^9.0.4"
+    "electron": "^9.0.4",
+    "electron-packager": "^14.2.1",
+    "systeminformation": "^4.26.9",
+    "icon-extractor": "^1.0.3",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "dependencies": {
+    "why-is-node-running": "^2.2.0"
   }
 }

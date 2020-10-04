@@ -1,0 +1,69 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+
+#main-button,.satellite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 45px;
+  max-width: 45px;
+  min-height: 45px;
+  max-height: 45px;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+#main-button {
+  top: 10px;
+}
+
+.dark {
+  /*background-color: rgb(30,230,249);*/
+  background-color: rgb(115, 166, 118);
+}
+
+.light {
+  /*background-color: rgb(20, 52, 73);*/
+  background-color: rgb(69, 76, 84);
+}
+
+#main-button i {
+  /*color: white;*/
+  /*color: rgba(218,165,32, 1);*/
+  margin-left: 5px;
+}
+
+#display-name {
+  height: 25px;
+  margin-top: -35px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  top: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#selected-option {
+  margin-left: 40px;
+}

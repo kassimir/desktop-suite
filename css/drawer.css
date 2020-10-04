@@ -1,0 +1,112 @@
+html {
+  background-color: transparent;
+}
+
+body {
+  background-color: rgba(115, 166, 118, 0.3);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Contrail One', cursive;
+  font-size: 14px;
+}
+
+#tabs {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  font-size: 19px;
+}
+
+.tab {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  flex: 1 1 auto;
+  text-align: center;
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.tab:last-child {
+  border: none;
+}
+
+#container {
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition-duration: 1s;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 7px;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.selected-tab,
+.btn:hover,
+th {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 6px 5px 0 5px;
+  /*color: #1ee6f9;*/
+  color: rgba(214, 174, 112, 1);
+  border: 1px solid rgba(69, 76, 84,0.3);
+  cursor: auto;
+}
+
+.spacer { display: block; margin-top: 20px; }
+
+.btn {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  height: 25px;
+  font-size: 17px;
+  margin-bottom: 5px;
+  padding: 6px 5px 0 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  overflow: hidden;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(69, 76, 84,0.3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
